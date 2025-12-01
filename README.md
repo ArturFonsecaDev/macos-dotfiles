@@ -1,6 +1,8 @@
-# Dotfiles
+# Dotfiles do Artur
 
 Este repositório contém meus **dotfiles e configurações pessoais**, organizados para fácil manutenção e portabilidade usando [GNU Stow](https://www.gnu.org/software/stow/).
+
+> ⚠️ Este repositório ainda está em produção. Mudanças podem ocorrer frequentemente. Em breve adicionarei um **arquivo de setup automático (`setup.sh`)** para facilitar a instalação.
 
 ## Estrutura do repositório
 
@@ -14,3 +16,5 @@ Este repositório contém meus **dotfiles e configurações pessoais**, organiza
 | `starship` | `~/.config/starship.toml`                | Configuração do prompt Starship |
 
 > Todos os arquivos estão versionados no repo e aplicados via **symlinks** com Stow.
+
+---
