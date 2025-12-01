@@ -1,0 +1,48 @@
+# ~/.config/aerospace/aerospace.toml
+
+start-at-login = true
+
+# define gap/padding 
+[gaps]
+inner.horizontal = 5
+inner.vertical   = 5
+outer.left       = 5
+outer.right      = 5
+outer.top        = 5
+outer.bottom     = 5
+
+# define keybindings no modo “main”
+[mode.main.binding]
+
+#foco dos workspaces
+alt-h = "focus left"
+alt-j = "focus down"
+alt-k = "focus up"
+alt-l = "focus right"
+
+# mudar workspaces
+"alt-right" = "workspace next"
+"alt-left"  = "workspace prev"
+
+#workspaces 1-9
+"alt-1" = "workspace 1"
+"alt-2" = "workspace 2"
+"alt-3" = "workspace 3"
+"alt-4" = "workspace 4"
+"alt-5" = "workspace 5"
+"alt-6" = "workspace 6"
+"alt-7" = "workspace 7"
+"alt-8" = "workspace 8"
+"alt-9" = "workspace 9"
+
+# mover janela atual para outro worspace
+"alt-shift-1" = "move-node-to-workspace 1"
+"alt-shift-2" = "move-node-to-workspace 2"
+"alt-shift-3" = "move-node-to-workspace 3"
+"alt-shift-4" = "move-node-to-workspace 4"
+"alt-shift-5" = "move-node-to-workspace 5"
+"alt-shift-6" = "move-node-to-workspace 6"
+"alt-shift-7" = "move-node-to-workspace 7"
+"alt-shift-8" = "move-node-to-workspace 8"
+"alt-shift-9" = "move-node-to-workspace 9"
+
