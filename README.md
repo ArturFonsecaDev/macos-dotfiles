@@ -1,20 +1,20 @@
-# Dotfiles do Artur
+# Dotfiles
 
-Este repositório contém meus **dotfiles e configurações pessoais**, organizados para fácil manutenção e portabilidade usando [GNU Stow](https://www.gnu.org/software/stow/).
+This repository contains my **personal dotfiles and configurations**, organized for easy maintenance and portability using [GNU Stow](https://www.gnu.org/software/stow/).
 
-> ⚠️ Este repositório ainda está em produção. Mudanças podem ocorrer frequentemente. Em breve adicionarei um **arquivo de setup automático (`setup.sh`)** para facilitar a instalação.
+> ⚠️ This repository is still under development. Frequent changes may occur. I will soon add an **automatic setup script (`setup.sh`)** to simplify installation.
 
-## Estrutura do repositório
+## Repository Structure
 
-| Pacote      | Local final no sistema                   | Descrição |
-|------------|-----------------------------------------|-----------|
-| `aerospace` | `~/.config/aerospace`                   | Configurações do gerenciador de janelas tiling AeroSpace |
-| `kitty`    | `~/.config/kitty`                        | Configuração do terminal Kitty |
-| `nvim`     | `~/.config/nvim`                         | Configurações do Neovim, incluindo plugins e Lua |
-| `skhd`     | `~/.config/skhd`                          | Hotkeys no macOS |
-| `dircolors`| `~/.dircolorsrc`                          | Esquema de cores para `ls` e terminal |
-| `starship` | `~/.config/starship.toml`                | Configuração do prompt Starship |
+| Package      | Target Location                         | Description |
+|-------------|----------------------------------------|------------|
+| `aerospace` | `~/.config/aerospace`                   | Configuration for the AeroSpace tiling window manager |
+| `kitty`     | `~/.config/kitty`                       | Terminal emulator configuration for Kitty |
+| `nvim`      | `~/.config/nvim`                        | Neovim configuration, including plugins and Lua scripts |
+| `skhd`      | `~/.config/skhd`                        | Hotkey daemon for macOS |
+| `dircolors` | `~/.dircolorsrc`                        | Color scheme for `ls` and terminal |
+| `starship`  | `~/.config/starship.toml`               | Starship prompt configuration |
 
-> Todos os arquivos estão versionados no repo e aplicados via **symlinks** com Stow.
+> All files are versioned in this repository and applied via **symlinks** using Stow.
 
 ---
