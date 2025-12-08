@@ -2,14 +2,53 @@
 
 start-at-login = true
 
-# define gap/padding 
+on-focus-changed = [
+  "exec-and-forget osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-index-jsx\"'",
+]
+
+exec-on-workspace-change = [
+  '/bin/zsh',
+  '-c',
+  '/usr/bin/osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-index-jsx\""',
+]
+
+# define gap/padding ∫
 [gaps]
-inner.horizontal = 5
-inner.vertical   = 5
-outer.left       = 5
-outer.right      = 5
-outer.top        = 5
-outer.bottom     = 5
+inner.horizontal = [
+    {monitor."SFP24DFI FLAT" = 15},
+    {monitor."Built-in Retina Display" = 5},
+    5
+]
+
+inner.vertical   = [
+    {monitor."SFP24DFI FLAT" = 15},
+    {monitor."Built-in Retina Display" = 5},
+    5
+]
+
+outer.left       = [
+    {monitor."SFP24DFI FLAT" = 10},
+    {monitor."Built-in Retina Display" = 5},
+    5
+]
+
+outer.right      = [
+    {monitor."SFP24DFI FLAT" = 10},
+    {monitor."Built-in Retina Display" = 5},
+    5
+]
+
+outer.top        = [
+    {monitor."SFP24DFI FLAT" = 40},
+    {monitor."Built-in Retina Display" = 5},
+    5
+]
+
+outer.bottom     = [
+    {monitor."SFP24DFI FLAT" = 25},
+    {monitor."Built-in Retina Display" = 5},
+    5
+]
 
 # define keybindings no modo “main”
 [mode.main.binding]
@@ -21,8 +60,8 @@ alt-k = "focus up"
 alt-l = "focus right"
 
 # mudar workspaces
-"alt-right" = "workspace next"
-"alt-left"  = "workspace prev"
+# "alt-right" = "workspace next"
+# "alt-left"  = "workspace prev"
 
 #workspaces 1-9
 "alt-1" = "workspace 1"
@@ -70,3 +109,43 @@ alt-l = "focus right"
 
 # Recarregar o arquivo de configuração do AeroSpace
 "alt-r" = "reload-config"
+
+"alt-backspace" = "focus-monitor next"
+
+[workspace-to-monitor-force-assignment]
+1 = 'main'     # Zen (Browser)
+2 = 'main'      # Editor de Código
+3 = 'main'      # Terminal
+4 = 'secondary' # DB
+5 = 'secondary' # Spotify
+6 = 'secondary' # discord
+7 = 'secondary' # whatsapp
+
+
+[[on-window-detected]]
+    if.app-id = 'app.zen-browser.zen'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'com.jetbrains.PhpStorm'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'net.kovidgoyal.kitty'
+    run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+    if.app-id = 'io.beekeeperstudio.desktop'
+    run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
+    if.app-id = 'com.hnc.Discord'
+    run = 'move-node-to-workspace 6'
+
+[[on-window-detected]]
+    if.app-id = 'net.whatsapp.WhatsApp'
+    run = 'move-node-to-workspace 7'

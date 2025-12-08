@@ -1,6 +1,6 @@
 # Disable Cmd-based macOS defaults
 # cmd - q : /bin/true     # Stops Cmd + Q from quitting the active app
-cmd - w : /bin/true     # Stops Cmd + W from closing the active window or tab
+# cmd - w : /bin/true     # Stops Cmd + W from closing the active window or tab
 cmd - h : /bin/true     # Stops Cmd + H from hiding the active app
 cmd - m : /bin/true     # Stops Cmd + M from minimizing the active window
 # cmd - t : /bin/true     # Stops Cmd + T from opening a new tab (e.g., in Finder, browsers)
@@ -15,7 +15,7 @@ cmd - tab : /bin/true   # Attempts to stop Cmd + Tab app switcher (might need Ka
 # alt - right : /bin/true # Stops Alt + Right from moving cursor one word right in text editors
 # alt - up : /bin/true    # Stops Alt + Up from scrolling up or jumping lines (app-dependent)
 # alt - down : /bin/true  # Stops Alt + Down from scrolling down or jumping lines (app-dependent)
-alt - tab : /bin/true   # Stops Alt + Tab from any macOS or app-specific behavior (less common)
+# alt - tab : /bin/true   # Stops Alt + Tab from any macOS or app-specific behavior (less common)
 
 # Disable Cmd + Alt combos
 cmd + alt - d : /bin/true  # Stops Cmd + Alt + D from toggling the Dock visibility
