@@ -15,6 +15,8 @@ alias kitty-reload='[[ -n "$KITTY_PID" ]] && sudo kill -SIGUSR1 "$KITTY_PID"'
 # custom aliases
 alias c=clear
 alias gdelb="~/scripts/delete.sh"
+alias dup="docker compose up -d"
+alias dcdown="docker compose down"
 
 # colored dirs
 if [[ -x "$(command -v dircolors)" ]]; then

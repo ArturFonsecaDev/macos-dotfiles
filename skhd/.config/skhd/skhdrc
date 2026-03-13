@@ -23,5 +23,5 @@ cmd + alt - h : /bin/true  # Stops Cmd + Alt + H from hiding all apps except the
 cmd + alt - m : /bin/true  # Stops Cmd + Alt + M from minimizing all windows of the active app
 
 # Shortcuts
-cmd + shift - t : open -a kitty
+ctrl + shift - t : open -a kitty
 cmd + shift - s : open -a spotify
